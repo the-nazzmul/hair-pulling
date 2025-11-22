@@ -15,12 +15,10 @@ function twoSum(nums, target) {
   const seen = {}; //number -> index
 
   for (let i = 0; i < nums.length; i++) {
-
     const current = nums[i];
     const complement = target - current;
 
     if (complement in seen) {
-      console.log([seen[complement], i]);
       return [seen[complement], i];
     }
 
@@ -28,7 +26,7 @@ function twoSum(nums, target) {
   }
 }
 
-const array = [2, 7, 11, 15];
-const target = 9;
+// const array = [2, 7, 11, 15];
+// const target = 9;
 
-const output = twoSum(array, target);
+// const output = twoSum(array, target);
